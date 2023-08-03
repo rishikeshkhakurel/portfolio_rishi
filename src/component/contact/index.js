@@ -3,6 +3,7 @@ import ContactStyle from './contact-style'
 import TitleButton from '../skills/title-button'
 import { useForm } from '@formcarry/react';
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const { state, submit } = useForm({
@@ -30,9 +31,15 @@ const Contact = () => {
 
             <footer>
                 <div id="connect">
-                    <AiFillGithub className='icons' />
-                    <AiFillLinkedin className='icons' />
-                    <AiFillMail className='icons' />
+                    <Link to='https://github.com/rishikeshkhakurel'>
+                        <AiFillGithub className='icons' />
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/rishikesh-khakurel-bb5b22215/'>
+                        <AiFillLinkedin className='icons' />
+                    </Link>
+                    <Link to='mailto:khakurel.rishikesh1@gmail.com'>
+                        <AiFillMail className='icons' />
+                    </Link>
                 </div>
 
             </footer>
