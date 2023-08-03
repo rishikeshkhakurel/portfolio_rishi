@@ -118,10 +118,10 @@ export default AboutMeStyled;
 
 export const IntroStyled = styled.div`
 @media screen and (max-width: 1500px) {
-    height:${props => props.showFullText && '30% !important'}
+    height:${props => props.showfulltext && '30% !important'}
     }
     @media screen and (max-width: 1000px) {        
-        height:${props => props.showFullText && '35% !important'}
+        height:${props => props.showfulltext && '35% !important'}
 }
     position: absolute;
     width: 100%;

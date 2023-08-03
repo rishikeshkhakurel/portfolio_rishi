@@ -31,7 +31,7 @@ const AboutMe = () => {
                 <img src={Rishi} alt='Rishi' />
             </div>
             <div id="intro-display">
-                <Intro display={false} />
+                <Intro />
             </div>
         </AboutMeStyled>
     )
