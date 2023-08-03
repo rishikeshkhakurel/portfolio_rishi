@@ -27,7 +27,7 @@ body {
   h2{
     font-family: Raleway;
     font-size: 20px;
-    line-height: 23px
+    line-height: 23px;
     font-weight: 700;
   }
 
