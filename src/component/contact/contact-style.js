@@ -1,9 +1,10 @@
 import { styled } from "styled-components";
 
 const ContactStyle = styled.div`
-height: calc(100% - 55px);
+height: 100%;
 position: relative;
 @media screen and (max-width: 700px) {
+    height: calc(100% - 55px);
     margin-top: 64px;
 }
 form{
