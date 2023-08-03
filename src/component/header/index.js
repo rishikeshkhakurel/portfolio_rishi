@@ -14,18 +14,18 @@ const Header = ({ handleMenuClick }) => {
                 </div>
                 {menu ? <AiOutlineClose className="menu-icon" onClick={() => setMenu(false)} /> : <IoMenu className="menu-icon" onClick={() => setMenu(true)} />}
                 <div id="menu">
-                    <p onClick={() => handleMenuClick(1)}>About Me</p>
-                    <p onClick={() => handleMenuClick(2)}>Skills</p>
-                    <p onClick={() => handleMenuClick(3)}>Portfolio</p>
-                    <button onClick={() => handleMenuClick(4)}>Contact Me</button>
+                    <p onClick={() => handleMenuClick('about-me')}>About Me</p>
+                    <p onClick={() => handleMenuClick('skills')}>Skills</p>
+                    <p onClick={() => handleMenuClick('portfolio')}>Portfolio</p>
+                    <button onClick={() => handleMenuClick('contact')}>Contact Me</button>
                 </div>
             </div>
             {
                 menu && <div id="menu-responsive">
-                    <p onClick={() => handleMenuClick(1)}>About Me</p>
-                    <p onClick={() => handleMenuClick(2)}>Skills</p>
-                    <p onClick={() => handleMenuClick(3)}>Portfolio</p>
-                    <p onClick={() => handleMenuClick(4)}>Contact Me</p>
+                    <p onClick={() => handleMenuClick('about-me')}>About Me</p>
+                    <p onClick={() => handleMenuClick('skills')}>Skills</p>
+                    <p onClick={() => handleMenuClick('portfolio')}>Portfolio</p>
+                    <p onClick={() => handleMenuClick('contact')}>Contact Me</p>
                 </div>
             }
         </HeaderStyled>
