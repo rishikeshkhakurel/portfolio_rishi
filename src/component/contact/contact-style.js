@@ -55,6 +55,10 @@ form{
             cursor: pointer;
         }
     }
+
+    p{
+        margin-top: 16px;
+    }
 }
 
 footer{
