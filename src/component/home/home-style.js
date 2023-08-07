@@ -17,6 +17,10 @@ max-height: 100%;
     #portfolio{
         height: 100%;
     }
+    #contact{
+        height: 100%;
+    }
+    
     .container{
         height: calc(100vh - 112px);
         transition: margin 0.5s ease;
