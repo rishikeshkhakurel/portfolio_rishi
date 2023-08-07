@@ -7,11 +7,16 @@ position: relative;
     height: calc(100% - 55px);
     margin-top: 64px;
 }
+
+#contact-form{
+    height: 100%;
+    padding-bottom: 12vh;
+}
 form{
     width: 80%;
     max-width: 500px;
     margin:auto;
-    margin-top: 5%;
+    margin-top: 2%;
     display:flex;
     flex-direction: column;
     font-size: 16px;

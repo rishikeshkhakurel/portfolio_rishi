@@ -17,17 +17,19 @@ const Contact = () => {
 
     return (
         <ContactStyle>
-            <div id="title">
-                <TitleButton>Contact</TitleButton>
-            </div>
-            <form onSubmit={submit}>
-                <input type="text" name="FullName" placeholder='ENTER YOUR NAME*' />
-                <input type="email" name="Email" placeholder='ENTER YOUR EMAIL* ' />
-                <textarea type="text" name="Message" placeholder='YOUR MESSAGE * ' rows="10" cols="100" />
-                <div id="button-div">
-                    <button type="submit">Submit</button>
+            <div id="contact-form">
+                <div id="title">
+                    <TitleButton>Contact</TitleButton>
                 </div>
-            </form>
+                <form onSubmit={submit}>
+                    <input type="text" name="FullName" placeholder='ENTER YOUR NAME*' />
+                    <input type="email" name="Email" placeholder='ENTER YOUR EMAIL* ' />
+                    <textarea type="text" name="Message" placeholder='YOUR MESSAGE * ' rows="10" cols="100" />
+                    <div id="button-div">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
 
             <footer>
                 <div id="connect">
