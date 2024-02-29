@@ -27,6 +27,7 @@ button{
     background: #FFF;
     font-weight: 700;
     cursor:pointer;
+    margin-right: 24px;
 }
 
 #header-margin{

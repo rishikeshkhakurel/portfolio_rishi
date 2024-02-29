@@ -21,6 +21,14 @@ const Header = ({ handleMenuClick }) => {
         setMenu(false);
     };
 
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = require('../../common/assets/Rishikesh_Khakurel_CV.pdf'); // Adjust the path accordingly
+        link.download = 'Rishikesh_Khakurel_CV.pdf';
+        link.click();
+
+    }
+
     useEffect(() => {
         document.addEventListener("click", handleClickOutside);
         return () => {
@@ -39,6 +47,7 @@ const Header = ({ handleMenuClick }) => {
                     <p onClick={() => handleMenu('skills')}>Skills</p>
                     <p onClick={() => handleMenu('portfolio')}>Portfolio</p>
                     <button onClick={() => handleMenu('contact')}>Contact Me</button>
+                    <button onClick={() => downloadCV()}>Download CV</button>
                 </div>
             </div>
             {
@@ -48,6 +57,7 @@ const Header = ({ handleMenuClick }) => {
                         <p onClick={() => handleMenu('skills')}>Skills</p>
                         <p onClick={() => handleMenu('portfolio')}>Portfolio</p>
                         <p onClick={() => handleMenu('contact')}>Contact Me</p>
+                        <p onClick={() => downloadCV()}>Download CV</p>
                     </div>
                 )}
         </HeaderStyled>
