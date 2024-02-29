@@ -46,7 +46,7 @@ const Header = ({ handleMenuClick }) => {
                     <p onClick={() => handleMenu('about-me')}>About Me</p>
                     <p onClick={() => handleMenu('skills')}>Skills</p>
                     <p onClick={() => handleMenu('portfolio')}>Portfolio</p>
-                    <button onClick={() => handleMenu('contact')}>Contact Me</button>
+                    <p onClick={() => handleMenu('contact')}>Contact Me</p>
                     <button onClick={() => downloadCV()}>Download CV</button>
                 </div>
             </div>
